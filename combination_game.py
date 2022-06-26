@@ -1,28 +1,14 @@
 import random
-import numpy as np
+from math import factorial
 
-card_marks = 'star,sun,moon'
-marks = card_marks.split(',')
-print(marks)
-print('moonは' + str(marks.index('moon')) + '番目')
-print(marks[-2])
+a = random.randint(1,4)
+b = random.randint(2,3)
+x = int((factorial(a+b-1))/(factorial(b)*factorial(a-1)))
+print(str(a)+"個のものから"+str(b)+"個のものを重複を許して選ぶ方法は何通りありますか。")
 
-#等確率でひとつ選ぶ。
-mark = random.choice(marks)
-print(mark)
-#等確率で２つ選ぶ。
-num_trial = 2
-mark_2 = np.random.choice(marks, num_trial)
-print(mark_2)
-#確率を指定して３つ選ぶ。
-num_trial = 3
-prob = [1/5,1/5,3/5]
-mark_3 = np.random.choice(marks, num_trial, p = prob)
-print(mark_3)
-
-#並べ替え
-marks.sort()
-print(marks)
-#starを取り除く。
-marks.remove('star')
-print(marks)
+ans = int(input())
+if ans == x:
+    print("正解です。")
+else:
+    print("不正解です。正解は"+str(x)+"です。")
+    
