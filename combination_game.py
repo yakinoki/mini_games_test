@@ -1,7 +1,7 @@
 import random
 from math import factorial
 
-def solve_problem():
+def solve_problem() -> None:
     a = random.randint(1,4)
     b = random.randint(2,3)
     x = int((factorial(a+b-1))/(factorial(b)*factorial(a-1)))
