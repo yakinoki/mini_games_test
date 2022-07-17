@@ -1,6 +1,20 @@
 import random
+import time
+import datetime
 from math import factorial
 
+#計算に掛かった時間を計る。
+def time_log(func):
+    def time_record():
+        start = datetime.datetime.today()
+        print("---start:" + func.__name__)
+        result = func()
+        end = datetime.datetime.today()
+        delta = end - start
+        print(delta, "秒であなたはこの問題に解答しました。")
+    return time_record
+
+@time_log
 def solve_problem() -> None:
     a = random.randint(1,4)
     b = random.randint(2,3)
