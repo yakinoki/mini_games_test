@@ -4,14 +4,14 @@
 
 ## combination_game.py
 
-重複組み合わせの計算をするゲーム。
+A game to calculate combinations with repetition.
 
 ## e_card.ipynb
 
-お互いカードを出し合って勝敗を決めるゲーム。
+A game in which players play cards against each other to determine the winner.
 
 ## ４×４オセロ.ipynb
 
-4×4オセロゲーム。
+4×4 Othello game.
 
 ![tn](https://user-images.githubusercontent.com/46132709/219397668-da217c51-0814-4110-9b95-598b111488a9.png)
